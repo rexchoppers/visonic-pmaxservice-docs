@@ -3,6 +3,9 @@
 ## Name
 PmaxService/getApiVersion
 
+## Description
+This method returns the API version of the module.
+
 ## Parameters
 This method does not take any parameters.
 

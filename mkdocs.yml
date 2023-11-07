@@ -7,3 +7,4 @@ nav:
 - Sending A Request: 'sending-a-request.md'
 - Methods:
     - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
+    - 'PmaxService/getBatteryLevel': 'methods/pmaxservice-getbatterylevel.md'
