@@ -11,3 +11,4 @@ nav:
     - 'PmaxService/getConnectionType': 'methods/pmaxservice-getconnectiontype.md'
     - 'PmaxService/setPanelState': 'methods/pmaxservice-setpanelstate.md'
     - 'PmaxService/getDate': 'methods/pmaxservice-getdate.md'
+    - 'PmaxService/getDateTime': 'methods/pmaxservice-getdatetime.md'

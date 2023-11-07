@@ -29,11 +29,6 @@
       }
    },
    {
-      "method" : "PmaxService/getDate",
-      "params" : null,
-      "returns" : "somestring"
-   },
-   {
       "method" : "PmaxService/getDateTime",
       "params" : null,
       "returns" : "somestring"
