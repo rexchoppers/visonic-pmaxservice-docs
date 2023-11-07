@@ -17,21 +17,11 @@
       "returns" : []
    },
    {
-      "method" : "PmaxService/enableSsh",
-      "params" : [ "somestring", true ],
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/enrollDevice",
       "params" : [ "somestring", "somestring", 1 ],
       "returns" : {
          "objectkey" : "objectvalue"
       }
-   },
-   {
-      "method" : "PmaxService/getDateTime",
-      "params" : null,
-      "returns" : "somestring"
    },
    {
       "method" : "PmaxService/getDeviceConfig",

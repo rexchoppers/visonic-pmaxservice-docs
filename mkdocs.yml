@@ -12,3 +12,4 @@ nav:
     - 'PmaxService/setPanelState': 'methods/pmaxservice-setpanelstate.md'
     - 'PmaxService/getDate': 'methods/pmaxservice-getdate.md'
     - 'PmaxService/getDateTime': 'methods/pmaxservice-getdatetime.md'
+    - 'PmaxService/enableSsh': 'methods/pmaxservice-enablessh.md'
