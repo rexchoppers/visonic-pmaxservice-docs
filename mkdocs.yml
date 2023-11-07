@@ -1,3 +1,9 @@
 site_name: Visonic PmaxService Documentation
 theme:
   name: material
+
+nav:
+- Home: 'index.md'
+- Sending A Request: 'sending-a-request.md'
+- Methods:
+    - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
