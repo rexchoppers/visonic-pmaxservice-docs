@@ -75,11 +75,6 @@
       "returns" : []
    },
    {
-      "method" : "PmaxService/getLocationsList",
-      "params" : null,
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getLogHistory",
       "params" : [ "somestring", "somestring" ],
       "returns" : []

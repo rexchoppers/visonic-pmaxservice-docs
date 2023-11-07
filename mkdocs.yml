@@ -13,3 +13,4 @@ nav:
     - 'PmaxService/getDate': 'methods/pmaxservice-getdate.md'
     - 'PmaxService/getDateTime': 'methods/pmaxservice-getdatetime.md'
     - 'PmaxService/enableSsh': 'methods/pmaxservice-enablessh.md'
+    - 'PmaxService/getLocationsList': 'methods/pmaxservice-getlocationslist.md'
