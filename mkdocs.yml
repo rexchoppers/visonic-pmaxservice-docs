@@ -8,3 +8,4 @@ nav:
 - Methods:
     - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
     - 'PmaxService/getBatteryLevel': 'methods/pmaxservice-getbatterylevel.md'
+    - 'PmaxService/getConnectionType': 'methods/pmaxservice-getconnectiontype.md'

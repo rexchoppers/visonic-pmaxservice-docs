@@ -29,21 +29,6 @@
       }
    },
    {
-      "method" : "PmaxService/getApiVersion",
-      "params" : null,
-      "returns" : "somestring"
-   },
-   {
-      "method" : "PmaxService/getBatteryLevel",
-      "params" : null,
-      "returns" : 1
-   },
-   {
-      "method" : "PmaxService/getConnectionType",
-      "params" : null,
-      "returns" : "somestring"
-   },
-   {
       "method" : "PmaxService/getDate",
       "params" : null,
       "returns" : "somestring"
