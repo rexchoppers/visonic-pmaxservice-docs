@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../pmaxservice-getpanelstatuses/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../pmaxservice-getdevicesconfig/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
     
     
       
-        <title>Visonic PmaxService Documentation</title>
+        <title>PmaxService/getPanelState - Visonic PmaxService Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.4b4a2bd9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pmaxservicegetpanelstate" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -72,7 +81,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Visonic PmaxService Documentation" class="md-header__button md-logo" aria-label="Visonic PmaxService Documentation" data-md-component="logo">
+    <a href="../.." title="Visonic PmaxService Documentation" class="md-header__button md-logo" aria-label="Visonic PmaxService Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              PmaxService/getPanelState
             
           </span>
         </div>
@@ -164,7 +173,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Visonic PmaxService Documentation" class="md-nav__button md-logo" aria-label="Visonic PmaxService Documentation" data-md-component="logo">
+    <a href="../.." title="Visonic PmaxService Documentation" class="md-nav__button md-logo" aria-label="Visonic PmaxService Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -181,7 +190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -200,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sending-a-request/" class="md-nav__link">
+      <a href="../../sending-a-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -217,18 +226,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -242,7 +253,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Methods
@@ -255,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getapiversion/" class="md-nav__link">
+      <a href="../pmaxservice-getapiversion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getbatterylevel/" class="md-nav__link">
+      <a href="../pmaxservice-getbatterylevel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getconnectiontype/" class="md-nav__link">
+      <a href="../pmaxservice-getconnectiontype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-setpanelstate/" class="md-nav__link">
+      <a href="../pmaxservice-setpanelstate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getdate/" class="md-nav__link">
+      <a href="../pmaxservice-getdate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -355,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getdatetime/" class="md-nav__link">
+      <a href="../pmaxservice-getdatetime/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -375,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-enablessh/" class="md-nav__link">
+      <a href="../pmaxservice-enablessh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -395,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getlocationslist/" class="md-nav__link">
+      <a href="../pmaxservice-getlocationslist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -415,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getpanelstatuses/" class="md-nav__link">
+      <a href="../pmaxservice-getpanelstatuses/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -433,9 +444,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getpanelstate/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PmaxService/getPanelState
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -444,6 +475,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -455,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/methods/pmaxservice-getdevicesconfig/" class="md-nav__link">
+      <a href="../pmaxservice-getdevicesconfig/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -493,6 +579,51 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -504,8 +635,44 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="pmaxservicegetpanelstate">PmaxService/getPanelState</h1>
+<h2 id="name">Name</h2>
+<p>PmaxService/getPanelState</p>
+<h2 id="description">Description</h2>
+<p>This method returns information on the panel's state for a particular partition</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li><code>params[0]</code> Partition ID</li>
+</ul>
+<h2 id="example-request">Example Request</h2>
+<pre><code class="language-json">{
+    &quot;params&quot;: [
+        1
+    ],
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;method&quot;: &quot;PmaxService/getPanelState&quot;,
+    &quot;id&quot;: 1
+}
+</code></pre>
+<h2 id="example-response">Example Response</h2>
+<pre><code class="language-json">{
+    &quot;id&quot;: 1,
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;result&quot;: {
+        &quot;partition&quot;: 1,
+        &quot;state&quot;: &quot;DISARM&quot;
+    }
+}
+</code></pre>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -538,10 +705,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.81fa17fe.min.js"></script>
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
       
     
   </body>
