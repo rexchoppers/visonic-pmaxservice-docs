@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../../sending-a-request/">
+        <link rel="prev" href="../pmaxservice-getconnectiontype/">
       
-      
-        <link rel="next" href="../pmaxservice-getbatterylevel/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>PmaxService/getApiVersion - Visonic PmaxService Documentation</title>
+        <title>PmaxService/setPanelState - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetapiversion" class="md-skip">
+        <a href="#pmaxservicesetpanelstate" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getApiVersion
+              PmaxService/setPanelState
             
           </span>
         </div>
@@ -264,6 +262,66 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getapiversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getApiVersion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getbatterylevel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getBatteryLevel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getconnectiontype/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getConnectionType
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -279,7 +337,7 @@
           
   
   <span class="md-ellipsis">
-    PmaxService/getApiVersion
+    PmaxService/setPanelState
   </span>
   
 
@@ -290,7 +348,7 @@
         
   
   <span class="md-ellipsis">
-    PmaxService/getApiVersion
+    PmaxService/setPanelState
   </span>
   
 
@@ -350,66 +408,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getbatterylevel/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getBatteryLevel
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getconnectiontype/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getConnectionType
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-setpanelstate/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/setPanelState
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -498,18 +496,30 @@
                   
 
 
-<h1 id="pmaxservicegetapiversion">PmaxService/getApiVersion</h1>
+<h1 id="pmaxservicesetpanelstate">PmaxService/setPanelState</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getApiVersion</p>
+<p>PmaxService/setPanelState</p>
 <h2 id="description">Description</h2>
-<p>This method returns the API version of the module.</p>
+<p>Sets the state of the panel. For example, if you're looking to arm/disarm your panel, you would use this method</p>
 <h2 id="parameters">Parameters</h2>
-<p>This method does not take any parameters.</p>
+<ul>
+<li><code>params[0]</code> Your user code you use to arm + disarm the panel</li>
+<li><code>params[1]</code> The state you want to set your panel - <code>AWAY</code>, <code>HOME</code>, <code>DISARM</code> </li>
+<li><code>params[2]</code> The partition you want to set the state of (Requires clarification)</li>
+<li><code>params[3]</code> Unknown (Requires clarification)</li>
+<li><code>params[4]</code> Unknown (Requires clarification)</li>
+</ul>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
-    &quot;params&quot;: [],
+    &quot;params&quot;: [
+      1234,
+      &quot;HOME&quot;,
+      1,
+      true,
+      true
+    ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getApiVersion&quot;,
+    &quot;method&quot;: &quot;PmaxService/setPanelState&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -517,7 +527,9 @@
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;result&quot;: &quot;3.31&quot;
+    &quot;result&quot;: {
+        &quot;status&quot;: &quot;success&quot;
+    }
 }
 </code></pre>
 

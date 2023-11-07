@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../sending-a-request/">
+        <link rel="prev" href="../pmaxservice-getapiversion/">
       
       
-        <link rel="next" href="../pmaxservice-getbatterylevel/">
+        <link rel="next" href="../pmaxservice-getconnectiontype/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PmaxService/getApiVersion - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getBatteryLevel - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetapiversion" class="md-skip">
+        <a href="#pmaxservicegetbatterylevel" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getApiVersion
+              PmaxService/getBatteryLevel
             
           </span>
         </div>
@@ -264,6 +264,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getapiversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getApiVersion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -279,7 +299,7 @@
           
   
   <span class="md-ellipsis">
-    PmaxService/getApiVersion
+    PmaxService/getBatteryLevel
   </span>
   
 
@@ -290,7 +310,7 @@
         
   
   <span class="md-ellipsis">
-    PmaxService/getApiVersion
+    PmaxService/getBatteryLevel
   </span>
   
 
@@ -350,26 +370,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getbatterylevel/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getBatteryLevel
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -498,18 +498,18 @@
                   
 
 
-<h1 id="pmaxservicegetapiversion">PmaxService/getApiVersion</h1>
+<h1 id="pmaxservicegetbatterylevel">PmaxService/getBatteryLevel</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getApiVersion</p>
+<p>PmaxService/getBatteryLevel</p>
 <h2 id="description">Description</h2>
-<p>This method returns the API version of the module.</p>
+<p>This method returns the battery level of the panel.</p>
 <h2 id="parameters">Parameters</h2>
 <p>This method does not take any parameters.</p>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
     &quot;params&quot;: [],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getApiVersion&quot;,
+    &quot;method&quot;: &quot;PmaxService/getBatteryLevel&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -517,9 +517,12 @@
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;result&quot;: &quot;3.31&quot;
+    &quot;result&quot;: 100
 }
 </code></pre>
+<ul>
+<li><code>result</code> - The battery level of the panel in percent.</li>
+</ul>
 
 
 
