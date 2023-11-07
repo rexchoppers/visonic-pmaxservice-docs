@@ -7,14 +7,18 @@
 
 **URL:** `http://<MODULE IP>:8181/remote/json-rpc`
 
+**Method:**: `POST`
+
 **Body:**
 
 ```json
 {
-    "params": [],
+    "params": <Method.Parameters>,
     "jsonrpc": "2.0",
-    "method": "<Operation>",
+    "method": <Method.Name>,
     "id": 1
 }
 ```
 
+- A list of supported methods and their parameters can be found under the **Methods** section
+- Parameter order does matter so make sure to check the order of the parameters in the parameters section
