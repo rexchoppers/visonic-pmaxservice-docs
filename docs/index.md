@@ -16,8 +16,5 @@ Please make sure to check your requests before performing them on your device
 - [My Site](http://www.rexchoppers.com)
 - [LinkedIn](https://www.linkedin.com/in/connor-b-50984311b/)
 
-
-...
-
 ## Credits
-...
+Coming soon...
