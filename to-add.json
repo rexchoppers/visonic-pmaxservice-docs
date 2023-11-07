@@ -314,13 +314,6 @@
       }
    },
    {
-      "method" : "PmaxService/setPanelState",
-      "params" : [ "somestring", "somestring", 1, true, true ],
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
-   },
-   {
       "method" : "PmaxService/setPowerGDeviceProperty",
       "params" : [ "somestring", 1, 1, 1, "somestring", 1 ],
       "returns" : []
