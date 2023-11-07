@@ -38,11 +38,6 @@
       }
    },
    {
-      "method" : "PmaxService/getDevicesConfig",
-      "params" : null,
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getEepromItem",
       "params" : [ 1, 1, 1 ],
       "returns" : []
@@ -92,13 +87,6 @@
    {
       "method" : "PmaxService/getPanelConfig",
       "params" : null,
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
-   },
-   {
-      "method" : "PmaxService/getPanelState",
-      "params" : [ 1 ],
       "returns" : {
          "objectkey" : "objectvalue"
       }
