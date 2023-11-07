@@ -15,3 +15,4 @@ nav:
     - 'PmaxService/enableSsh': 'methods/pmaxservice-enablessh.md'
     - 'PmaxService/getLocationsList': 'methods/pmaxservice-getlocationslist.md'
     - 'PmaxService/getPanelStatuses': 'methods/pmaxservice-getpanelstatuses.md'
+    - 'PmaxService/getPanelState': 'methods/pmaxservice-getpanelstate.md'
