@@ -112,13 +112,6 @@
       "returns" : "somestring"
    },
    {
-      "method" : "PmaxService/getUserCode",
-      "params" : [ "somestring", 1 ],
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
-   },
-   {
       "method" : "PmaxService/getWifiConfig",
       "params" : null,
       "returns" : {
