@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-getconnectiontype/">
+        <link rel="prev" href="../pmaxservice-getusercodes/">
       
-      
-        <link rel="next" href="../pmaxservice-getdate/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>PmaxService/setPanelState - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getUserCode - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicesetpanelstate" class="md-skip">
+        <a href="#pmaxservicegetusercode" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/setPanelState
+              PmaxService/getUserCode
             
           </span>
         </div>
@@ -324,29 +322,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PmaxService/setPanelState
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pmaxservice-setpanelstate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -355,61 +333,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    Name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-request" class="md-nav__link">
-    Example Request
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-response" class="md-nav__link">
-    Example Response
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -599,9 +522,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getusercode/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PmaxService/getUserCode
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -610,6 +553,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -698,30 +696,24 @@
                   
 
 
-<h1 id="pmaxservicesetpanelstate">PmaxService/setPanelState</h1>
+<h1 id="pmaxservicegetusercode">PmaxService/getUserCode</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/setPanelState</p>
+<p>PmaxService/getUserCode</p>
 <h2 id="description">Description</h2>
-<p>Sets the state of the panel. For example, if you're looking to arm/disarm your panel, you would use this method</p>
+<p>This method returns all the user codes for a particular user.</p>
 <h2 id="parameters">Parameters</h2>
 <ul>
 <li><code>params[0]</code> Your user code you use to arm + disarm the panel</li>
-<li><code>params[1]</code> The state you want to set your panel - <code>AWAY</code>, <code>HOME</code>, <code>DISARM</code> </li>
-<li><code>params[2]</code> The partition you want to set the state of (Requires clarification)</li>
-<li><code>params[3]</code> Unknown (Requires clarification)</li>
-<li><code>params[4]</code> Unknown (Requires clarification)</li>
+<li><code>params[1]</code> The user ID you want to get the codes for</li>
 </ul>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
     &quot;params&quot;: [
-      1234,
-      &quot;HOME&quot;,
-      1,
-      true,
-      true
+        &quot;1234&quot;,
+        1
     ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/setPanelState&quot;,
+    &quot;method&quot;: &quot;PmaxService/getUserCode&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -730,7 +722,13 @@
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;result&quot;: {
-        &quot;status&quot;: &quot;success&quot;
+        &quot;partitions&quot;: [
+            1,
+            2,
+            3
+        ],
+        &quot;userCode&quot;: &quot;1234&quot;,
+        &quot;userId&quot;: 1
     }
 }
 </code></pre>
