@@ -18,3 +18,4 @@ nav:
     - 'PmaxService/getPanelState': 'methods/pmaxservice-getpanelstate.md'
     - 'PmaxService/getDevicesConfig': 'methods/pmaxservice-getdevicesconfig.md'
     - 'PmaxService/isPanelConnected': 'methods/pmaxservice-ispanelconnected.md'
+    - 'PmaxService/getUserCodes': 'methods/pmaxservice-getusercodes.md'

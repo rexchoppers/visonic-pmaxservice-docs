@@ -119,11 +119,6 @@
       }
    },
    {
-      "method" : "PmaxService/getUserCodes",
-      "params" : [ "somestring" ],
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getWifiConfig",
       "params" : null,
       "returns" : {
@@ -139,11 +134,6 @@
       "method" : "PmaxService/getWlanapConfig",
       "params" : [ "somestring" ],
       "returns" : []
-   },
-   {
-      "method" : "PmaxService/isPanelConnected",
-      "params" : null,
-      "returns" : true
    },
    {
       "method" : "PmaxService/pmaxDownload",
