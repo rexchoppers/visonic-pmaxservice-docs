@@ -41,11 +41,6 @@
       }
    },
    {
-      "method" : "PmaxService/getLocation",
-      "params" : [ 1 ],
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getLocationInfo",
       "params" : null,
       "returns" : []
@@ -54,13 +49,6 @@
       "method" : "PmaxService/getLogHistory",
       "params" : [ "somestring", "somestring" ],
       "returns" : []
-   },
-   {
-      "method" : "PmaxService/getPanelConfig",
-      "params" : null,
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
    },
    {
       "method" : "PmaxService/getPowerGDeviceProperty",

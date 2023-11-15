@@ -26,3 +26,4 @@ nav:
     - 'PmaxService/getEepromVersion': 'methods/pmaxservice-geteepromversion.md'
     - 'PmaxService/getMaxDevices': 'methods/pmaxservice-getmaxdevices.md'
     - 'PmaxService/getMaxDevice': 'methods/pmaxservice-getmaxdevice.md'
+    - 'PmaxService/getLocation': 'methods/pmaxservice-getlocation.md'
