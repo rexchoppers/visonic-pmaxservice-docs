@@ -42,3 +42,12 @@
     "id": 1,
     "jsonrpc": "2.0"
 }
+
+{
+    "error": {
+        "code": -32001,
+        "message": "The response is invalid: Invalid PowerG type: 7"
+    },
+    "id": 1,
+    "jsonrpc": "2.0"
+}
