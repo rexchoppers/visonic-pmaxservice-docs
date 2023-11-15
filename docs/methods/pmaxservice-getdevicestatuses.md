@@ -4,7 +4,7 @@
 PmaxService/getDeviceStatuses
 
 ## Description
-Returns all status information for a device.
+This method returns all status information for a device.
 
 ## Parameters
 - `params[0]` PowerG Device type ID

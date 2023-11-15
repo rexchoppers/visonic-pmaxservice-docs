@@ -56,11 +56,6 @@
       "returns" : []
    },
    {
-      "method" : "PmaxService/getMaxDevice",
-      "params" : [ 1 ],
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getMaxDevices",
       "params" : null,
       "returns" : []
