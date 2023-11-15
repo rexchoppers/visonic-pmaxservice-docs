@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-enablessh/">
+        <link rel="prev" href="../pmaxservice-getlocationslist/">
       
       
-        <link rel="next" href="../pmaxservice-getpanelconfig/">
+        <link rel="next" href="../pmaxservice-getpanelstatuses/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PmaxService/getLocationsList - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getPanelConfig - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetlocationslist" class="md-skip">
+        <a href="#pmaxservicegetpanelconfig" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getLocationsList
+              PmaxService/getPanelConfig
             
           </span>
         </div>
@@ -404,6 +404,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getlocationslist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getLocationsList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -419,7 +439,7 @@
           
   
   <span class="md-ellipsis">
-    PmaxService/getLocationsList
+    PmaxService/getPanelConfig
   </span>
   
 
@@ -430,7 +450,7 @@
         
   
   <span class="md-ellipsis">
-    PmaxService/getLocationsList
+    PmaxService/getPanelConfig
   </span>
   
 
@@ -490,26 +510,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getpanelconfig/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getPanelConfig
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -838,18 +838,20 @@
                   
 
 
-<h1 id="pmaxservicegetlocationslist">PmaxService/getLocationsList</h1>
+<h1 id="pmaxservicegetpanelconfig">PmaxService/getPanelConfig</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getLocationsList</p>
+<p>PmaxService/getPanelConfig</p>
 <h2 id="description">Description</h2>
-<p>This method returns a full list of locations on the panel</p>
+<p>This method returns all configuration information for the panel.</p>
 <h2 id="parameters">Parameters</h2>
 <p>This method does not take any parameters.</p>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
-    &quot;params&quot;: [],
+    &quot;params&quot;: [
+
+    ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getLocationsList&quot;,
+    &quot;method&quot;: &quot;PmaxService/getPanelConfig&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -857,132 +859,30 @@
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;result&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;value&quot;: &quot;Loft&quot;
+    &quot;result&quot;: {
+        &quot;abortTime&quot;: 1,
+        &quot;bypassArmMode&quot;: &quot;MANUAL_BYPASS&quot;,
+        &quot;duressCode&quot;: &quot;0000&quot;,
+        &quot;eepromVersion&quot;: {
+            &quot;eeprom_model&quot;: 7,
+            &quot;eeprom_sub_model&quot;: 174
         },
-        {
-            &quot;id&quot;: 2,
-            &quot;value&quot;: &quot;Back door&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;value&quot;: &quot;Cellar&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;value&quot;: &quot;Bathroom&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;value&quot;: &quot;Bedroom&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;value&quot;: &quot;Child room&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;value&quot;: &quot;Conservatory&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;value&quot;: &quot;Play room&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;value&quot;: &quot;Dining room&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;value&quot;: &quot;Downstairs&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;value&quot;: &quot;Emergency&quot;
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;value&quot;: &quot;Fire&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;value&quot;: &quot;Front door&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;value&quot;: &quot;Garage&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;value&quot;: &quot;Garage door&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;value&quot;: &quot;Office&quot;
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;value&quot;: &quot;Hall&quot;
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;value&quot;: &quot;Kitchen&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;value&quot;: &quot;Laundry room&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;value&quot;: &quot;Living room&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;value&quot;: &quot;Master bath&quot;
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;value&quot;: &quot;Master Bdrm&quot;
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;value&quot;: &quot;Study&quot;
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;value&quot;: &quot;Upstairs&quot;
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;value&quot;: &quot;Utility room&quot;
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;value&quot;: &quot;Garden&quot;
-        },
-        {
-            &quot;id&quot;: 27,
-            &quot;value&quot;: &quot;Custom 1&quot;
-        },
-        {
-            &quot;id&quot;: 28,
-            &quot;value&quot;: &quot;Custom 2&quot;
-        },
-        {
-            &quot;id&quot;: 29,
-            &quot;value&quot;: &quot;Custom 3&quot;
-        },
-        {
-            &quot;id&quot;: 30,
-            &quot;value&quot;: &quot;Custom 4&quot;
-        },
-        {
-            &quot;id&quot;: 31,
-            &quot;value&quot;: &quot;Custom 5&quot;
-        }
-    ]
+        &quot;entryDelay1&quot;: 30,
+        &quot;entryDelay2&quot;: 60,
+        &quot;exitDelay&quot;: 30,
+        &quot;gprsEnrolled&quot;: false,
+        &quot;kidsComeHomeEnabled&quot;: false,
+        &quot;latchkeyEnabled&quot;: true,
+        &quot;panelId&quot;: &quot;0AAA0A&quot;,
+        &quot;partitionEnabled&quot;: false,
+        &quot;plinkVariant&quot;: &quot;adtuk&quot;,
+        &quot;plinkVersion&quot;: &quot;7.5.58&quot;,
+        &quot;pmaxDefaultVersion&quot;: &quot;J-703883 I20.214&quot;,
+        &quot;pmaxVersion&quot;: &quot;JS703642 I20.214&quot;,
+        &quot;quickArmEnabled&quot;: false,
+        &quot;viewOnDemand&quot;: &quot;VIEW_IN_ALL_MODES&quot;,
+        &quot;viewOnDemandTimeWindow&quot;: &quot;ALWAYS&quot;
+    }
 }
 </code></pre>
 

@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-enablessh/">
+        <link rel="prev" href="../pmaxservice-getmaxdevice/">
       
-      
-        <link rel="next" href="../pmaxservice-getpanelconfig/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>PmaxService/getLocationsList - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getLocation - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetlocationslist" class="md-skip">
+        <a href="#pmaxservicegetlocation" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getLocationsList
+              PmaxService/getLocation
             
           </span>
         </div>
@@ -404,29 +402,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PmaxService/getLocationsList
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getlocationslist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -435,61 +413,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    Name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-request" class="md-nav__link">
-    Example Request
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-response" class="md-nav__link">
-    Example Response
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -739,9 +662,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getlocation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PmaxService/getLocation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -750,6 +693,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -838,18 +836,22 @@
                   
 
 
-<h1 id="pmaxservicegetlocationslist">PmaxService/getLocationsList</h1>
+<h1 id="pmaxservicegetlocation">PmaxService/getLocation</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getLocationsList</p>
+<p>PmaxService/getLocation</p>
 <h2 id="description">Description</h2>
-<p>This method returns a full list of locations on the panel</p>
+<p>This method returns information for a zone location.</p>
 <h2 id="parameters">Parameters</h2>
-<p>This method does not take any parameters.</p>
+<ul>
+<li><code>params[0]</code> Location ID</li>
+</ul>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
-    &quot;params&quot;: [],
+    &quot;params&quot;: [
+        1
+    ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getLocationsList&quot;,
+    &quot;method&quot;: &quot;PmaxService/getLocation&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -857,132 +859,10 @@
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;result&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;value&quot;: &quot;Loft&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;value&quot;: &quot;Back door&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;value&quot;: &quot;Cellar&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;value&quot;: &quot;Bathroom&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;value&quot;: &quot;Bedroom&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;value&quot;: &quot;Child room&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;value&quot;: &quot;Conservatory&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;value&quot;: &quot;Play room&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;value&quot;: &quot;Dining room&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;value&quot;: &quot;Downstairs&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;value&quot;: &quot;Emergency&quot;
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;value&quot;: &quot;Fire&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;value&quot;: &quot;Front door&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;value&quot;: &quot;Garage&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;value&quot;: &quot;Garage door&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;value&quot;: &quot;Office&quot;
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;value&quot;: &quot;Hall&quot;
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;value&quot;: &quot;Kitchen&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;value&quot;: &quot;Laundry room&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;value&quot;: &quot;Living room&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;value&quot;: &quot;Master bath&quot;
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;value&quot;: &quot;Master Bdrm&quot;
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;value&quot;: &quot;Study&quot;
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;value&quot;: &quot;Upstairs&quot;
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;value&quot;: &quot;Utility room&quot;
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;value&quot;: &quot;Garden&quot;
-        },
-        {
-            &quot;id&quot;: 27,
-            &quot;value&quot;: &quot;Custom 1&quot;
-        },
-        {
-            &quot;id&quot;: 28,
-            &quot;value&quot;: &quot;Custom 2&quot;
-        },
-        {
-            &quot;id&quot;: 29,
-            &quot;value&quot;: &quot;Custom 3&quot;
-        },
-        {
-            &quot;id&quot;: 30,
-            &quot;value&quot;: &quot;Custom 4&quot;
-        },
-        {
-            &quot;id&quot;: 31,
-            &quot;value&quot;: &quot;Custom 5&quot;
-        }
-    ]
+    &quot;result&quot;: {
+        &quot;id&quot;: 1,
+        &quot;value&quot;: &quot;Loft&quot;
+    }
 }
 </code></pre>
 
