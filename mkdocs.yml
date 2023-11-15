@@ -14,6 +14,7 @@ nav:
     - 'PmaxService/getDateTime': 'methods/pmaxservice-getdatetime.md'
     - 'PmaxService/enableSsh': 'methods/pmaxservice-enablessh.md'
     - 'PmaxService/getLocationsList': 'methods/pmaxservice-getlocationslist.md'
+    - 'PmaxService/getPanelConfig': 'methods/pmaxservice-getpanelconfig.md'
     - 'PmaxService/getPanelStatuses': 'methods/pmaxservice-getpanelstatuses.md'
     - 'PmaxService/getPanelState': 'methods/pmaxservice-getpanelstate.md'
     - 'PmaxService/getDevicesConfig': 'methods/pmaxservice-getdevicesconfig.md'
