@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-getpanelstatuses/">
+        <link rel="prev" href="../pmaxservice-getdevicesconfig/">
       
       
-        <link rel="next" href="../pmaxservice-getdevicesconfig/">
+        <link rel="next" href="../pmaxservice-ispanelconnected/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PmaxService/getPanelState - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getDeviceConfig - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetpanelstate" class="md-skip">
+        <a href="#pmaxservicegetdeviceconfig" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getPanelState
+              PmaxService/getDeviceConfig
             
           </span>
         </div>
@@ -444,6 +444,46 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getpanelstate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getPanelState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getdevicesconfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getDevicesConfig
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -459,7 +499,7 @@
           
   
   <span class="md-ellipsis">
-    PmaxService/getPanelState
+    PmaxService/getDeviceConfig
   </span>
   
 
@@ -470,7 +510,7 @@
         
   
   <span class="md-ellipsis">
-    PmaxService/getPanelState
+    PmaxService/getDeviceConfig
   </span>
   
 
@@ -530,46 +570,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getdevicesconfig/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getDevicesConfig
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getdeviceconfig/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getDeviceConfig
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -798,22 +798,23 @@
                   
 
 
-<h1 id="pmaxservicegetpanelstate">PmaxService/getPanelState</h1>
+<h1 id="pmaxservicegetdeviceconfig">PmaxService/getDeviceConfig</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getPanelState</p>
+<p>PmaxService/getDeviceConfig</p>
 <h2 id="description">Description</h2>
-<p>This method returns information on the panel's state for a particular partition</p>
+<p>Returns all configuration information for a device.</p>
 <h2 id="parameters">Parameters</h2>
 <ul>
-<li><code>params[0]</code> Partition ID</li>
+<li><code>params[0]</code> PowerG Device type ID</li>
+<li><code>params[1]</code> Device ID</li>
 </ul>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
     &quot;params&quot;: [
-        1
+        3, 3
     ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getPanelState&quot;,
+    &quot;method&quot;: &quot;PmaxService/getDeviceConfig&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -822,8 +823,15 @@
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;result&quot;: {
-        &quot;partition&quot;: 1,
-        &quot;state&quot;: &quot;DISARM&quot;
+        &quot;id&quot;: 3,
+        &quot;location&quot;: &quot;Utility room&quot;,
+        &quot;partitions&quot;: [
+            1
+        ],
+        &quot;serial&quot;: &quot;000-0001&quot;,
+        &quot;subtype&quot;: 12,
+        &quot;type&quot;: 3,
+        &quot;zoneSecurityType&quot;: 4
     }
 }
 </code></pre>

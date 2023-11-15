@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-getpanelstatuses/">
+        <link rel="prev" href="../pmaxservice-geteepromversion/">
       
       
-        <link rel="next" href="../pmaxservice-getdevicesconfig/">
+        <link rel="next" href="../pmaxservice-getmaxdevice/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PmaxService/getPanelState - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getMaxDevices - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetpanelstate" class="md-skip">
+        <a href="#pmaxservicegetmaxdevices" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getPanelState
+              PmaxService/getMaxDevices
             
           </span>
         </div>
@@ -444,29 +444,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PmaxService/getPanelState
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getpanelstate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,61 +455,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    Name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-request" class="md-nav__link">
-    Example Request
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-response" class="md-nav__link">
-    Example Response
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,9 +604,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getmaxdevices/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PmaxService/getMaxDevices
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -690,6 +635,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -798,22 +798,20 @@
                   
 
 
-<h1 id="pmaxservicegetpanelstate">PmaxService/getPanelState</h1>
+<h1 id="pmaxservicegetmaxdevices">PmaxService/getMaxDevices</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getPanelState</p>
+<p>PmaxService/getMaxDevices</p>
 <h2 id="description">Description</h2>
-<p>This method returns information on the panel's state for a particular partition</p>
+<p>This method returns the maximum number of devices per type that can be added to the system.</p>
 <h2 id="parameters">Parameters</h2>
-<ul>
-<li><code>params[0]</code> Partition ID</li>
-</ul>
+<p>This method does not take any parameters.</p>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
     &quot;params&quot;: [
-        1
+
     ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getPanelState&quot;,
+    &quot;method&quot;: &quot;PmaxService/getMaxDevices&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -821,10 +819,32 @@
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;result&quot;: {
-        &quot;partition&quot;: 1,
-        &quot;state&quot;: &quot;DISARM&quot;
-    }
+    &quot;result&quot;: [
+        {
+            &quot;max&quot;: 4,
+            &quot;type&quot;: 0
+        },
+        {
+            &quot;max&quot;: 15,
+            &quot;type&quot;: 1
+        },
+        {
+            &quot;max&quot;: 4,
+            &quot;type&quot;: 2
+        },
+        {
+            &quot;max&quot;: 30,
+            &quot;type&quot;: 3
+        },
+        {
+            &quot;max&quot;: 8,
+            &quot;type&quot;: 4
+        },
+        {
+            &quot;max&quot;: 8,
+            &quot;type&quot;: 5
+        }
+    ]
 }
 </code></pre>
 

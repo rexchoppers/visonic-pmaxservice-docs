@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-getpanelstatuses/">
+        <link rel="prev" href="../pmaxservice-getusercode/">
       
       
-        <link rel="next" href="../pmaxservice-getdevicesconfig/">
+        <link rel="next" href="../pmaxservice-geteepromversion/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PmaxService/getPanelState - Visonic PmaxService Documentation</title>
+        <title>PmaxService/getDeviceStatuses - Visonic PmaxService Documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetpanelstate" class="md-skip">
+        <a href="#pmaxservicegetdevicestatuses" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getPanelState
+              PmaxService/getDeviceStatuses
             
           </span>
         </div>
@@ -444,29 +444,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PmaxService/getPanelState
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getpanelstate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,61 +455,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    Name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-request" class="md-nav__link">
-    Example Request
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-response" class="md-nav__link">
-    Example Response
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -639,9 +564,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getdevicestatuses/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PmaxService/getDeviceStatuses
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -650,6 +595,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -798,22 +798,23 @@
                   
 
 
-<h1 id="pmaxservicegetpanelstate">PmaxService/getPanelState</h1>
+<h1 id="pmaxservicegetdevicestatuses">PmaxService/getDeviceStatuses</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getPanelState</p>
+<p>PmaxService/getDeviceStatuses</p>
 <h2 id="description">Description</h2>
-<p>This method returns information on the panel's state for a particular partition</p>
+<p>This method returns all status information for a device.</p>
 <h2 id="parameters">Parameters</h2>
 <ul>
-<li><code>params[0]</code> Partition ID</li>
+<li><code>params[0]</code> PowerG Device type ID</li>
+<li><code>params[1]</code> Device ID</li>
 </ul>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
     &quot;params&quot;: [
-        1
+        3, 3
     ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getPanelState&quot;,
+    &quot;method&quot;: &quot;PmaxService/getDeviceStatuses&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -822,8 +823,30 @@
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;result&quot;: {
-        &quot;partition&quot;: 1,
-        &quot;state&quot;: &quot;DISARM&quot;
+        &quot;id&quot;: 3,
+        &quot;statuses&quot;: {
+            &quot;acTrouble&quot;: false,
+            &quot;alarm&quot;: false,
+            &quot;bypassZone&quot;: false,
+            &quot;cleanMeTrouble&quot;: false,
+            &quot;coldAlert&quot;: false,
+            &quot;freezerAlert&quot;: false,
+            &quot;freezingAlert&quot;: false,
+            &quot;heatAlarmTrouble&quot;: false,
+            &quot;hotAlert&quot;: false,
+            &quot;lowBattery&quot;: false,
+            &quot;maskingTrouble&quot;: false,
+            &quot;notUpdated&quot;: false,
+            &quot;oneWayTrouble&quot;: false,
+            &quot;open&quot;: false,
+            &quot;smokeAlarm&quot;: false,
+            &quot;smokeTrouble&quot;: false,
+            &quot;supervisionTrouble&quot;: false,
+            &quot;tamperMemory&quot;: false,
+            &quot;tamperTrouble&quot;: false,
+            &quot;zoneTrouble&quot;: false
+        },
+        &quot;type&quot;: 3
     }
 }
 </code></pre>
