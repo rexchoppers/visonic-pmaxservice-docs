@@ -22,3 +22,4 @@ nav:
     - 'PmaxService/getUserCodes': 'methods/pmaxservice-getusercodes.md'
     - 'PmaxService/getUserCode': 'methods/pmaxservice-getusercode.md'
     - 'PmaxService/getDeviceStatuses': 'methods/pmaxservice-getdevicestatuses.md'
+    - 'PmaxService/getEepromVersion': 'methods/pmaxservice-geteepromversion.md'

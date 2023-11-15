@@ -29,11 +29,6 @@
       "returns" : []
    },
    {
-      "method" : "PmaxService/getEepromVersion",
-      "params" : null,
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getGsmLevel",
       "params" : null,
       "returns" : 1
