@@ -24,20 +24,6 @@
       }
    },
    {
-      "method" : "PmaxService/getDeviceConfig",
-      "params" : [ 1, 1 ],
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
-   },
-   {
-      "method" : "PmaxService/getDeviceStatuses",
-      "params" : [ 1, 1 ],
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
-   },
-   {
       "method" : "PmaxService/getEepromItem",
       "params" : [ 1, 1, 1 ],
       "returns" : []
