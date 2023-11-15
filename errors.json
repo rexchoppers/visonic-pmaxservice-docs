@@ -33,3 +33,12 @@
     "id": 1,
     "jsonrpc": "2.0"
 }
+
+{
+    "error": {
+        "code": -32001,
+        "message": "The response is invalid: Not enrolled device"
+    },
+    "id": 1,
+    "jsonrpc": "2.0"
+}
