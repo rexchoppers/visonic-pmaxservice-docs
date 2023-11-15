@@ -56,11 +56,6 @@
       "returns" : []
    },
    {
-      "method" : "PmaxService/getMaxDevices",
-      "params" : null,
-      "returns" : []
-   },
-   {
       "method" : "PmaxService/getPanelConfig",
       "params" : null,
       "returns" : {
