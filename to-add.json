@@ -156,13 +156,7 @@
          "objectkey" : "objectvalue"
       }
    },
-   {
-      "method" : "PmaxService/setDebugMode",
-      "params" : [ "somestring", true ],
-      "returns" : {
-         "objectkey" : "objectvalue"
-      }
-   },
+
    {
       "method" : "PmaxService/setDeviceLed",
       "params" : [ "somestring", 1, 1, 1 ],

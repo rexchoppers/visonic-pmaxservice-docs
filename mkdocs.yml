@@ -27,3 +27,4 @@ nav:
     - 'PmaxService/getMaxDevices': 'methods/pmaxservice-getmaxdevices.md'
     - 'PmaxService/getMaxDevice': 'methods/pmaxservice-getmaxdevice.md'
     - 'PmaxService/getLocation': 'methods/pmaxservice-getlocation.md'
+    - 'PmaxService/setDebugMode': 'methods/pmaxservice-setdebugmode.md'
