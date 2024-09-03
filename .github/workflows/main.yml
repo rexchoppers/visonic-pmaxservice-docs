@@ -31,8 +31,15 @@ jobs:
         run: |
           mkdocs build --clean  # Builds the site into the 'site/' directory by default
 
+      - name: Upload site as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: site-artifact
+          path: site/  # Ensure this matches the directory where your site is built
+
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.DEPLOYMENT_TOKEN }}
-          publish_dir: ./site  # This is the directory MkDocs builds to by default
+          github_token: ${{ secrets.GH_PAT }}  # Use the PAT instead of GITHUB_TOKEN
+          publish_dir: ./site  # Ensure this is the correct directory for your built site
