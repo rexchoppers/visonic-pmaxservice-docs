@@ -41,5 +41,5 @@ jobs:
         if: success()
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GH_PAT }}  # Use the PAT instead of GITHUB_TOKEN
+          github_token: ${{ secrets.DEPLOYMENT_TOKEN }}  # Use the PAT instead of GITHUB_TOKEN
           publish_dir: ./site  # Ensure this is the correct directory for your built site
