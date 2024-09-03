@@ -5,19 +5,15 @@ on:
     branches: ["master"]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
-        
-      - name: Setup Python
+
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
@@ -28,19 +24,29 @@ jobs:
           pip install mkdocs mkdocs-material  # Add any other plugins you need
 
       - name: Build MkDocs site
-        run: |
-          mkdocs build --clean  # Builds the site into the 'site/' directory by default
+        run: mkdocs build --clean  # Builds the site into the 'site/' directory by default
 
       - name: Upload site as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           name: site-artifact
-          path: site/  # Ensure this matches the directory where your site is built
+          path: site/
 
+  # Deploy job
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
-        if: success()
-        uses: peaceiris/actions-gh-pages@v4
+        id: deployment
+        uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.DEPLOYMENT_TOKEN }}  # Use the PAT instead of GITHUB_TOKEN
-          publish_dir: ./site  # Ensure this is the correct directory for your built site
-          keep_files: false
+          artifact: site-artifact  # Use the artifact uploaded in the build job
