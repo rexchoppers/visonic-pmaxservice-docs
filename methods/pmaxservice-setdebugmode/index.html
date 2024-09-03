@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../pmaxservice-getmaxdevices/">
+        <link rel="prev" href="../pmaxservice-getlocation/">
       
-      
-        <link rel="next" href="../pmaxservice-getlocation/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>PmaxService/getMaxDevice - Visonic PmaxService Documentation</title>
+        <title>PmaxService/setDebugMode - Visonic PmaxService Documentation</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pmaxservicegetmaxdevice" class="md-skip">
+        <a href="#pmaxservicesetpanelstate" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PmaxService/getMaxDevice
+              PmaxService/setDebugMode
             
           </span>
         </div>
@@ -664,6 +662,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getmaxdevice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getMaxDevice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pmaxservice-getlocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PmaxService/getLocation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -680,7 +720,7 @@
           
   
   <span class="md-ellipsis">
-    PmaxService/getMaxDevice
+    PmaxService/setDebugMode
   </span>
   
 
@@ -691,7 +731,7 @@
         
   
   <span class="md-ellipsis">
-    PmaxService/getMaxDevice
+    PmaxService/setDebugMode
   </span>
   
 
@@ -761,48 +801,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-getlocation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/getLocation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmaxservice-setdebugmode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PmaxService/setDebugMode
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -901,22 +899,24 @@
                   
 
 
-<h1 id="pmaxservicegetmaxdevice">PmaxService/getMaxDevice</h1>
+<h1 id="pmaxservicesetpanelstate">PmaxService/setPanelState</h1>
 <h2 id="name">Name</h2>
-<p>PmaxService/getMaxDevice</p>
+<p>PmaxService/setDebugMode</p>
 <h2 id="description">Description</h2>
-<p>This method returns the maximum number of devices for a particular device type that can be added to the system.</p>
+<p>Enables or disables the debug mode of the panel. Note: This is not supported on my panel.</p>
 <h2 id="parameters">Parameters</h2>
 <ul>
-<li><code>params[0]</code> PowerG Device type ID</li>
+<li><code>params[0]</code> Your installer code</li>
+<li><code>params[1]</code> Debug mode true/false</li>
 </ul>
 <h2 id="example-request">Example Request</h2>
 <pre><code class="language-json">{
     &quot;params&quot;: [
-        3
+      1234,
+      true
     ],
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;PmaxService/getMaxDevice&quot;,
+    &quot;method&quot;: &quot;PmaxService/setDebugMode&quot;,
     &quot;id&quot;: 1
 }
 </code></pre>
@@ -925,8 +925,7 @@
     &quot;id&quot;: 1,
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;result&quot;: {
-        &quot;max&quot;: 30,
-        &quot;type&quot;: 3
+        &quot;status&quot;: &quot;success&quot;
     }
 }
 </code></pre>
