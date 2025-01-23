@@ -7,21 +7,21 @@
 This method is used to authenticate the user with REST API. The user will receive a `User-Token` which is used for all subsequent requests.
 
 ## Parameters
-- `params[0]` Email
-- `params[1]` Password
-- `params[2]` App ID
+- `email` Email
+- `password` Password
+- `app_id` App ID
 
 ## Authentication
 This method does not require authentication.
 
 ## Example Request
-POST /apptype
+`POST /apptype`
 
 ```json
 {
   "email": "<email>",
   "password": "<password>",
-  "app_id": "<app id>"
+  "app_id": "<app id>" // See App IDs
 }
 ```
 
@@ -71,6 +71,3 @@ POST /apptype
   }
 }
 ```
-
-## App IDs
-- 2d513ccb-f3ec-4656-b506-f158b6689b1e: Visonic Go

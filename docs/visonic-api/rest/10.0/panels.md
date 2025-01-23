@@ -13,7 +13,7 @@ This method does not take any parameters.
 `User-Token` is required.
 
 ## Example Request
-GET /panels
+`GET /panels`
 
 ## Example Response
 ```json
