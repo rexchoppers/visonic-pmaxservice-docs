@@ -11,7 +11,8 @@ nav:
     - '/apptype': 'visonic-api/apptype.md'
     - Rest:
       - '10.0':
-        - '/auth': 'visonic-api/rest/10.0/auth.md'  
+        - '/auth': 'visonic-api/rest/10.0/auth.md'
+        - '/panels': 'visonic-api/rest/10.0/panels.md'
 - Methods:
     - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
     - 'PmaxService/getBatteryLevel': 'methods/pmaxservice-getbatterylevel.md'

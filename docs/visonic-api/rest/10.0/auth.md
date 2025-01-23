@@ -11,6 +11,9 @@ This method is used to authenticate the user with REST API. The user will receiv
 - `params[1]` Password
 - `params[2]` App ID
 
+## Authentication
+This method does not require authentication.
+
 ## Example Request
 POST /apptype
 
