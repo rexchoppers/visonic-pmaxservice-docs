@@ -5,6 +5,8 @@ theme:
 nav:
 - Home: 'index.md'
 - Sending A Request: 'sending-a-request.md'
+- Visonic API:
+    - Introduction: 'visonic-api/introduction.md'
 - Methods:
     - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
     - 'PmaxService/getBatteryLevel': 'methods/pmaxservice-getbatterylevel.md'
