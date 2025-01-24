@@ -15,6 +15,8 @@ nav:
         - '/auth': 'visonic-api/rest/10.0/auth.md'
         - '/panels': 'visonic-api/rest/10.0/panels.md'
         - '/panel_access_info': 'visonic-api/rest/10.0/panel-access-info.md'
+      - Panel:
+        - '/login': 'visonic-api/rest/panel/login.md'
 - Methods:
     - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
     - 'PmaxService/getBatteryLevel': 'methods/pmaxservice-getbatterylevel.md'

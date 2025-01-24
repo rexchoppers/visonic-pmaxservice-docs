@@ -28,7 +28,7 @@ This method does not require authentication.
 ## Example Response
 ```json
 {
-  "user_token": "917678b6-db1f-49b9-8c1d-cb9c1a4d4a2f", // This will be used for all subsequent requests
+  "user_token": "917678b6-db1f-49b9-8c1d-cb9c1a4d4a2f", // This will be used for all subsequent requests where `User-Token` is required
   "customization": {
     "id": 1,
     "name": "Default",
