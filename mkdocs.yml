@@ -17,6 +17,7 @@ nav:
         - '/panel_access_info': 'visonic-api/rest/10.0/panel-access-info.md'
         - '/panel_info': 'visonic-api/rest/10.0/panel-info.md'
         - '/locations': 'visonic-api/rest/10.0/locations.md'
+        - '/status': 'visonic-api/rest/10.0/status.md'
       - Panel:
         - '/login': 'visonic-api/rest/panel/login.md'
 - Methods:
