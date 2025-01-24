@@ -11,6 +11,7 @@ This method does not take any parameters.
 
 ## Authentication
 `User-Token` is required.
+
 `Session-Token` is required.
 
 ## Example Request
