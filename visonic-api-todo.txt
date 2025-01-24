@@ -1,0 +1,1 @@
+https://visonic.tycomonitor.com/rest_api/10.0/wakeup_sms - Unsure what this does
