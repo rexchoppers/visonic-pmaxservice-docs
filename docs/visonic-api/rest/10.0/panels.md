@@ -4,7 +4,7 @@
 /panels
 
 ## Description
-This method returns the a list of panels that are associated with the user.
+This method returns a list of panels that are associated with the user.
 
 ## Parameters
 This method does not take any parameters.
