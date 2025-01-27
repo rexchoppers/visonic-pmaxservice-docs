@@ -1,3 +1,7 @@
 https://visonic.tycomonitor.com/rest_api/10.0/wakeup_sms - Unsure what this does - {} 
-
 https://visonic.tycomonitor.com/rest_api/10.0/push_options?token=token - Unsure what this does - { "mode": 67583}
+
+
+
+https://visonic.tycomonitor.com/rest_api/10.0/alerts - Test with real data
+https://visonic.tycomonitor.com/rest_api/10.0/troubles - Test with real data
