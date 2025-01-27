@@ -10,7 +10,10 @@ Visonic/Tyco have their own REST API that are used for the following apps:
 The API points to Visonic/Tyco's PowerManage servers which then passes the request to the alarm panel.
 
 ## Details
-Endpoint: `https://visonic.tycomonitor.com/rest_api`
+Normal user endpoint: `https://visonic.tycomonitor.com/rest_api/{rest_version}`
+
+Installer endpoint: `https://visonic.tycomonitor.com/rest_api/installer/{installer_version}`
+
 
 ## Versions
 There are several versions and types of this API available. Calling the `/version` endpoint will return a list of supported versions for each type of API.
@@ -31,6 +34,7 @@ There are several versions and types of this API available. Calling the `/versio
   ]
 }
 ```
+
 
 ## Authentication
 There are two types of tokens that are passed in the header of the request.
