@@ -24,6 +24,7 @@ nav:
         - '/devices': 'visonic-api/rest/10.0/devices.md'
         - '/smart_devices': 'visonic-api/rest/10.0/smart-devices.md'
         - '/users': 'visonic-api/rest/10.0/users.md'
+        - '/allow_switch_to_programming_mode': 'visonic-api/rest/10.0/allow-switch-to-programming-mode.md'
         - Had:
           - Rules:
             - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
