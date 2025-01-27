@@ -10,12 +10,14 @@ nav:
     - App IDs: 'visonic-api/app-ids.md'
     - '/version': 'visonic-api/version.md'
     - '/apptype': 'visonic-api/apptype.md'
-    - Rest:
-      - Installer:
-        - 8.0:
+    - '/rest_api':
+      - '/installer':
+        - '/8.0':
           - '/auth': 'visonic-api/rest/installer/8.0/auth.md'
           - '/panels': 'visonic-api/rest/installer/8.0/panels.md'
-      - '10.0':
+          - '/panel':
+            - '/diagnostics': 'visonic-api/rest/installer/8.0/panel/diagnostics.md'
+      - '/10.0':
         - '/auth': 'visonic-api/rest/10.0/auth.md'
         - '/panels': 'visonic-api/rest/10.0/panels.md'
         - '/panel_access_info': 'visonic-api/rest/10.0/panel-access-info.md'
@@ -29,8 +31,8 @@ nav:
         - '/smart_devices': 'visonic-api/rest/10.0/smart-devices.md'
         - '/users': 'visonic-api/rest/10.0/users.md'
         - '/allow_switch_to_programming_mode': 'visonic-api/rest/10.0/allow-switch-to-programming-mode.md'
-        - Had:
-          - Rules:
+        - '/had':
+          - '/rules':
             - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
             - 'restrictions': 'visonic-api/rest/10.0/had/rules/restrictions.md'
       - Panel:
