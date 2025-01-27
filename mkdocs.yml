@@ -19,6 +19,9 @@ nav:
         - '/locations': 'visonic-api/rest/10.0/locations.md'
         - '/status': 'visonic-api/rest/10.0/status.md'
         - '/feature_set': 'visonic-api/rest/10.0/feature-set.md'
+        - Had:
+          - Rules:
+            - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
       - Panel:
         - '/login': 'visonic-api/rest/panel/login.md'
 - Methods:
