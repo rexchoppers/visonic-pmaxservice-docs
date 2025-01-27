@@ -6,8 +6,8 @@ nav:
 - Home: 'index.md'
 - Sending A Request: 'sending-a-request.md'
 - Visonic API:
-    - Introduction: 'visonic-api/introduction.md'
-    - App IDs: 'visonic-api/app-ids.md'
+    - 'Introduction': 'visonic-api/introduction.md'
+    - 'App IDs': 'visonic-api/app-ids.md'
     - '/version': 'visonic-api/version.md'
     - '/apptype': 'visonic-api/apptype.md'
     - '/rest_api':
@@ -36,7 +36,7 @@ nav:
           - '/rules':
             - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
             - 'restrictions': 'visonic-api/rest/10.0/had/rules/restrictions.md'
-      - Panel:
+      - '/panel':
         - '/login': 'visonic-api/rest/panel/login.md'
 - Methods:
     - 'PmaxService/getApiVersion': 'methods/pmaxservice-getapiversion.md'
