@@ -19,3 +19,5 @@ POST https://visonic.tycomonitor.com/rest_api/10.0/register_push_recipient
   "version": 7
 }
 ```
+
+GET https://visonic.tycomonitor.com/rest_api/10.0/alarms - Test with real data
