@@ -8,7 +8,6 @@ GET https://visonic.tycomonitor.com/rest_api/10.0/troubles - Test with real data
 GET https://visonic.tycomonitor.com/rest_api/10.0/alarms - Test with real data
 
 POST https://visonic.tycomonitor.com/rest_api/10.0/register_push_recipient
-
 ```json
 {
   "token": "token",
