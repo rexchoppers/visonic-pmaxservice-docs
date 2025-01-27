@@ -22,6 +22,7 @@ nav:
         - Had:
           - Rules:
             - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
+            - 'restrictions': 'visonic-api/rest/10.0/had/rules/restrictions.md'
       - Panel:
         - '/login': 'visonic-api/rest/panel/login.md'
 - Methods:
