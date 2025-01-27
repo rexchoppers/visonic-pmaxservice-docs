@@ -23,6 +23,7 @@ nav:
         - '/home_automation_devices': 'visonic-api/rest/10.0/home-automation-devices.md'
         - '/devices': 'visonic-api/rest/10.0/devices.md'
         - '/smart_devices': 'visonic-api/rest/10.0/smart-devices.md'
+        - '/users': 'visonic-api/rest/10.0/users.md'
         - Had:
           - Rules:
             - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
