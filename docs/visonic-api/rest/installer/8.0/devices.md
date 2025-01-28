@@ -12,8 +12,6 @@ This method does not take any parameters.
 ## Authentication
 `User-Token` is required.
 
-`Session-Token` is required.
-
 ## Example Request
 `GET /devices`
 
@@ -23,70 +21,80 @@ Note: The following devices have had their types, locations and information modi
 ```json
 [
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 1,
     "device_type": "CONTROL_PANEL",
     "zone_type": null,
     "subtype": "VISONIC_PANEL",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
-    "traits": {},
+    "traits": {
+      "firmware": {
+        "version": "JS703642 I20.214",
+        "has_upgrade": false
+      }
+    },
     "name": "",
     "removable": false,
     "renamable": false
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 1,
     "device_type": "POWER_LINK",
     "zone_type": null,
     "subtype": "POWER_LINK",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
-    "traits": {},
+    "traits": {
+      "firmware": {
+        "version": "7.5.58",
+        "has_upgrade": true
+      }
+    },
     "name": "",
     "removable": false,
     "renamable": false
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 1,
     "device_type": "ZONE",
     "zone_type": "DELAY_2",
     "subtype": "MC303_VANISH",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 8,
-        "repeater": 1,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "location": {
         "name": "Front door"
-      },
-      "bypass": {
-        "enabled": false
       },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 8,
+        "repeater": 1,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "",
@@ -94,24 +102,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 2,
     "device_type": "ZONE",
     "zone_type": "INTERIOR",
     "subtype": "FLAT_PIR_SMART",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 17,
-        "repeater": null,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "meteo_info": {
         "brightness": {
@@ -126,14 +130,17 @@ Note: The following devices have had their types, locations and information modi
       "location": {
         "name": "Kitchen"
       },
-      "bypass": {
-        "enabled": false
-      },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 17,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "",
@@ -141,24 +148,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 3,
     "device_type": "ZONE",
     "zone_type": "INTERIOR",
     "subtype": "FLAT_PIR_SMART",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 21,
-        "repeater": 1,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "meteo_info": {
         "brightness": {
@@ -173,14 +176,18 @@ Note: The following devices have had their types, locations and information modi
       "location": {
         "name": "Upstairs"
       },
-      "bypass": {
-        "enabled": false
-      },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 21,
+        "repeater": 1,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "",
@@ -188,24 +195,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 4,
     "device_type": "ZONE",
     "zone_type": "INTERIOR_FOLLOW",
     "subtype": "FLAT_PIR_SMART",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 4,
-        "repeater": 1,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "meteo_info": {
         "brightness": {
@@ -220,38 +223,17 @@ Note: The following devices have had their types, locations and information modi
       "location": {
         "name": "Living room"
       },
-      "bypass": {
-        "enabled": false
-      },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
-      }
-    },
-    "name": "",
-    "removable": true,
-    "renamable": true
-  },
-  {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
-    "device_number": 1,
-    "device_type": "WL_SIREN",
-    "zone_type": null,
-    "subtype": "OUTDOOR",
-    "preenroll": false,
-    "warnings": null,
-    "partitions": [
-      1
-    ],
-    "traits": {
+      },
       "rssi": {
         "average": "strong",
         "current": "strong",
         "channel": 4,
-        "repeater": null,
+        "repeater": 1,
         "last_updated": "2025-01-23 13:42:03"
       }
     },
@@ -260,21 +242,45 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
+    "device_number": 1,
+    "device_type": "WL_SIREN",
+    "zone_type": null,
+    "subtype": "OUTDOOR",
+    "preenroll": false,
+    "warnings": [],
+    "partitions": [
+      1
+    ],
+    "traits": {
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 4,
+        "last_updated": "2025-01-23 13:42:03"
+      }
+    },
+    "name": "",
+    "removable": true,
+    "renamable": true
+  },
+  {
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 1,
     "device_type": "PGM",
     "zone_type": "OUTPUT",
     "subtype": "PGM_ON_PANEL",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [],
     "traits": {
       "location": {
         "name": "Front door"
       },
       "parent": {
-        "id": 00000000,
+        "id": 000000000,
         "port": 1
       }
     },
@@ -283,20 +289,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 1,
     "device_type": "KEYFOB",
     "zone_type": null,
     "subtype": "KEYFOB_ARM_LED",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
       "owner": {
-        "id": 00000000,
+        "id": 000000000,
         "name": "Joe Bloggs"
       }
     },
@@ -305,20 +311,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 2,
     "device_type": "KEYFOB",
     "zone_type": null,
     "subtype": "KEYFOB_ARM_LED",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
       "owner": {
-        "id": 00000000,
+        "id": 000000000,
         "name": "Joe Bloggs"
       }
     },
@@ -327,14 +333,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 1,
     "device_type": "WIRELESS_COMMANDER",
     "zone_type": null,
     "subtype": "LCD_KEYPAD",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -343,7 +349,6 @@ Note: The following devices have had their types, locations and information modi
         "average": "strong",
         "current": "strong",
         "channel": 8,
-        "repeater": null,
         "last_updated": "2025-01-23 13:42:03"
       }
     },
@@ -352,14 +357,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 1,
     "device_type": "PROXY_TAG",
     "zone_type": null,
     "subtype": "GENERIC_PROXY_TAG",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -369,14 +374,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 2,
     "device_type": "PROXY_TAG",
     "zone_type": null,
     "subtype": "GENERIC_PROXY_TAG",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -386,14 +391,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 3,
     "device_type": "PROXY_TAG",
     "zone_type": null,
     "subtype": "GENERIC_PROXY_TAG",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -403,14 +408,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 4,
     "device_type": "PROXY_TAG",
     "zone_type": null,
     "subtype": "GENERIC_PROXY_TAG",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -420,14 +425,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": null,
     "device_number": 5,
     "device_type": "PROXY_TAG",
     "zone_type": null,
     "subtype": "GENERIC_PROXY_TAG",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -437,36 +442,35 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 5,
     "device_type": "ZONE",
     "zone_type": "DELAY_1",
     "subtype": "MC303_VANISH",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 4,
-        "repeater": null,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "location": {
         "name": "Kitchen"
-      },
-      "bypass": {
-        "enabled": false
       },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 4,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "KITCHEN DOOR",
@@ -474,36 +478,35 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 6,
     "device_type": "ZONE",
     "zone_type": "DELAY_1",
     "subtype": "MC303_VANISH",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 21,
-        "repeater": null,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "location": {
         "name": "Utility room"
-      },
-      "bypass": {
-        "enabled": false
       },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 21,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "UTILITY ROOM DOOR",
@@ -511,24 +514,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 7,
     "device_type": "ZONE",
     "zone_type": "PERIMETER",
     "subtype": "FLAT_PIR_SMART",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 21,
-        "repeater": 1,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "meteo_info": {
         "brightness": {
@@ -543,14 +542,18 @@ Note: The following devices have had their types, locations and information modi
       "location": {
         "name": "Shed"
       },
-      "bypass": {
-        "enabled": false
-      },
       "soak": {
         "enabled": false
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 21,
+        "repeater": 1,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "",
@@ -558,25 +561,18 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 8,
     "device_type": "ZONE",
     "zone_type": "FIRE",
     "subtype": "S_SMOKE_AND_HEAT",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 21,
-        "repeater": 1,
-        "last_updated": "2025-01-23 13:42:03"
-      },
       "meteo_info": {
         "temperature": {
           "date": "2025-01-23T08:04:36",
@@ -591,6 +587,13 @@ Note: The following devices have had their types, locations and information modi
       },
       "rarely_used": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 21,
+        "repeater": 1,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "LOFT SM+H",
@@ -598,14 +601,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 1,
     "device_type": "REPEATER",
     "zone_type": null,
     "subtype": "BASIC_REPEATER",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -614,7 +617,6 @@ Note: The following devices have had their types, locations and information modi
         "average": "strong",
         "current": "strong",
         "channel": 17,
-        "repeater": null,
         "last_updated": "2025-01-23 13:42:03"
       }
     },
@@ -623,24 +625,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 9,
     "device_type": "ZONE",
     "zone_type": "PERIMETER",
     "subtype": "GLASS_BREAK_SMART",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 17,
-        "repeater": null,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "meteo_info": {
         "brightness": {
@@ -655,11 +653,14 @@ Note: The following devices have had their types, locations and information modi
       "location": {
         "name": "Kitchen"
       },
-      "bypass": {
-        "enabled": false
-      },
       "soak": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 17,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "",
@@ -667,24 +668,20 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 10,
     "device_type": "ZONE",
     "zone_type": "PERIMETER",
     "subtype": "GLASS_BREAK_SMART",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
     "traits": {
-      "rssi": {
-        "average": "strong",
-        "current": "strong",
-        "channel": 21,
-        "repeater": null,
-        "last_updated": "2025-01-23 13:42:03"
+      "bypass": {
+        "enabled": false
       },
       "meteo_info": {
         "brightness": {
@@ -699,11 +696,14 @@ Note: The following devices have had their types, locations and information modi
       "location": {
         "name": "Porch"
       },
-      "bypass": {
-        "enabled": false
-      },
       "soak": {
         "enabled": false
+      },
+      "rssi": {
+        "average": "strong",
+        "current": "strong",
+        "channel": 21,
+        "last_updated": "2025-01-23 13:42:03"
       }
     },
     "name": "",
@@ -711,14 +711,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 2,
     "device_type": "WIRELESS_COMMANDER",
     "zone_type": null,
     "subtype": "LCD_PRG_KEYPAD",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -736,14 +736,14 @@ Note: The following devices have had their types, locations and information modi
     "renamable": true
   },
   {
-    "id": 00000000,
-    "enrollment_id": "109-0000",
+    "id": 000000000,
+    "enrollment_id": "000-0000",
     "device_number": 3,
     "device_type": "WIRELESS_COMMANDER",
     "zone_type": null,
     "subtype": "LCD_PRG_KEYPAD",
     "preenroll": false,
-    "warnings": null,
+    "warnings": [],
     "partitions": [
       1
     ],
@@ -752,7 +752,6 @@ Note: The following devices have had their types, locations and information modi
         "average": "strong",
         "current": "strong",
         "channel": 8,
-        "repeater": null,
         "last_updated": "2025-01-23 13:42:03"
       }
     },
