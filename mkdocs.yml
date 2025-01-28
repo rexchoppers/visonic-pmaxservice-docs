@@ -20,6 +20,9 @@ nav:
           - '/status': 'visonic-api/rest/installer/8.0/status.md'
           - '/configuration_list': 'visonic-api/rest/installer/8.0/configuration-list.md'
           - '/feature_set': 'visonic-api/rest/installer/8.0/feature-set.md'
+          - '/had':
+            - '/rules':
+              - '/event-profiles': 'visonic-api/rest/installer/8.0/had/rules/event-profiles.md'
           - '/panel':
             - '/diagnostics': 'visonic-api/rest/installer/8.0/panel/diagnostics.md'
             - '/login': 'visonic-api/rest/installer/8.0/panel/login.md'
