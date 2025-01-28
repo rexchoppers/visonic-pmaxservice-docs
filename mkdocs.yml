@@ -27,6 +27,7 @@ nav:
           - '/start_download_eprom': 'visonic-api/rest/installer/8.0/start-download-eprom.md'
           - '/process_status': 'visonic-api/rest/installer/8.0/process-status.md'
           - '/groups': 'visonic-api/rest/installer/8.0/groups.md'
+          - '/start_download_device_configuration': 'visonic-api/rest/installer/8.0/start-download-device-configuration.md'
           - '/group':
             - '/assign': 'visonic-api/rest/installer/8.0/group/assign.md'
           - '/had':
