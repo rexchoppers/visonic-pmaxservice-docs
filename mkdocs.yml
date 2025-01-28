@@ -25,6 +25,7 @@ nav:
           - '/users': 'visonic-api/rest/installer/8.0/users.md'
           - '/configuration': 'visonic-api/rest/installer/8.0/configuration.md'
           - '/start_download_eprom': 'visonic-api/rest/installer/8.0/start-download-eprom.md'
+          - '/process_status': 'visonic-api/rest/installer/8.0/process-status.md'
           - '/had':
             - '/rules':
               - '/event-profiles': 'visonic-api/rest/installer/8.0/had/rules/event-profiles.md'
