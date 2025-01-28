@@ -17,6 +17,7 @@ nav:
           - '/panels': 'visonic-api/rest/installer/8.0/panels.md'
           - '/panel_info': 'visonic-api/rest/installer/8.0/panel-info.md'
           - '/customer_info': 'visonic-api/rest/installer/8.0/customer-info.md'
+          - '/status': 'visonic-api/rest/installer/8.0/status.md'
           - '/panel':
             - '/diagnostics': 'visonic-api/rest/installer/8.0/panel/diagnostics.md'
             - '/login': 'visonic-api/rest/installer/8.0/panel/login.md'

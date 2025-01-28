@@ -4,7 +4,7 @@
 /status
 
 ## Description
-This method returns basic panel information such as BBA connected status, partion status, and panel status.
+This method returns basic panel information such as BBA connected status, partition status, and panel status.
 
 ## Parameters
 This method does not take any parameters.
