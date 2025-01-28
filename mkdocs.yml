@@ -22,6 +22,7 @@ nav:
           - '/feature_set': 'visonic-api/rest/installer/8.0/feature-set.md'
           - '/events': 'visonic-api/rest/installer/8.0/events.md'
           - '/devices': 'visonic-api/rest/installer/8.0/devices.md'
+          - '/users': 'visonic-api/rest/installer/8.0/users.md'
           - '/had':
             - '/rules':
               - '/event-profiles': 'visonic-api/rest/installer/8.0/had/rules/event-profiles.md'
