@@ -35,6 +35,7 @@ nav:
           - '/initiate_rri': 'visonic-api/rest/installer/8.0/initiate-rri.md'
           - '/walk_test_status': 'visonic-api/rest/installer/8.0/walk-test-status.md'
           - '/start_walk_test': 'visonic-api/rest/installer/8.0/start-walk-test.md'
+          - '/stop_walk_test': 'visonic-api/rest/installer/8.0/stop-walk-test.md'
           - '/group':
             - '/assign': 'visonic-api/rest/installer/8.0/group/assign.md'
           - '/had':
