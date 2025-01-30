@@ -33,6 +33,7 @@ nav:
           - '/customize_zone': 'visonic-api/rest/installer/8.0/customize-zone.md'
           - '/rri_results': 'visonic-api/rest/installer/8.0/rri-results.md'
           - '/initiate_rri': 'visonic-api/rest/installer/8.0/initiate-rri.md'
+          - '/walk_test_status': 'visonic-api/rest/installer/8.0/walk-test-status.md'
           - '/group':
             - '/assign': 'visonic-api/rest/installer/8.0/group/assign.md'
           - '/had':

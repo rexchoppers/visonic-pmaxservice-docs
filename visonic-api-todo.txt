@@ -6,6 +6,8 @@ GET https://visonic.tycomonitor.com/rest_api/installer/8.0/wakeup_sms - Unsure w
 GET https://visonic.tycomonitor.com/rest_api/10.0/alerts - Test with real data
 GET https://visonic.tycomonitor.com/rest_api/10.0/troubles - Test with real data
 GET https://visonic.tycomonitor.com/rest_api/10.0/alarms - Test with real data
+GET https://visonic.tycomonitor.com/rest_api/10.0/had/rules/logs - Test with real data
+GET https://visonic.tycomonitor.com/rest_api/10.0/notifications/email - Test with real data
 
 POST https://visonic.tycomonitor.com/rest_api/10.0/register_push_recipient
 ```json
