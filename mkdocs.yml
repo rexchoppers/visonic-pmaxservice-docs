@@ -4,7 +4,6 @@ theme:
 
 nav:
 - Home: 'index.md'
-- Sending A Request: 'sending-a-request.md'
 - Visonic API:
     - 'Introduction': 'visonic-api/introduction.md'
     - 'App IDs': 'visonic-api/app-ids.md'

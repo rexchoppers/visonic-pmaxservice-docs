@@ -9,12 +9,13 @@ Please make sure to check your requests before performing them on your device
 ## Supported Systems
 - Visonic PowerMaster GTX
 
-## Supported Modules
-- Visonic PowerLink3 IP Module.
+## Supported Devices
+- Visonic PowerLink3 Module.
+- Visonic Powermanage Server
 
 ## Resources
 - [My Site](http://www.rexchoppers.com)
 - [LinkedIn](https://www.linkedin.com/in/connor-b-50984311b/)
 
 ## Credits
-Coming soon...
+[davesmeghead](https://github.com/davesmeghead/visonic) - For creating the best Home Assistant integration for Visonic panels
