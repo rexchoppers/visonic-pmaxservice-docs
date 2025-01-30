@@ -1,4 +1,7 @@
-# Sending A Request
+# Powerlink API
+
+## Introduction
+The Powerlink module which is used to interact between the panel and Powermanage server has its own JSON RPC API.
 
 ## Get a list of supported operations
 1. Open `http://<MODULE IP>:8181/` in your browser to see a complete list of supported operations.
