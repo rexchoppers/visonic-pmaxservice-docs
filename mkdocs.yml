@@ -68,6 +68,7 @@ nav:
   - 'Introduction': 'powerlink-api/introduction.md'
   - Methods:
       - 'PmaxService/getApiVersion': 'powerlink-api/methods/pmaxservice-getapiversion.md'
+      - 'PmaxService/registerClient': 'powerlink-api/methods/pmaxservice-registerclient.md'
       - 'PmaxService/getBatteryLevel': 'powerlink-api/methods/pmaxservice-getbatterylevel.md'
       - 'PmaxService/getConnectionType': 'powerlink-api/methods/pmaxservice-getconnectiontype.md'
       - 'PmaxService/setPanelState': 'powerlink-api/methods/pmaxservice-setpanelstate.md'
@@ -88,4 +89,5 @@ nav:
       - 'PmaxService/getMaxDevices': 'powerlink-api/methods/pmaxservice-getmaxdevices.md'
       - 'PmaxService/getMaxDevice': 'powerlink-api/methods/pmaxservice-getmaxdevice.md'
       - 'PmaxService/getLocation': 'powerlink-api/methods/pmaxservice-getlocation.md'
+      - 'PmaxService/setDebugMode': 'powerlink-api/methods/pmaxservice-setdebugmode.md'
       - 'PmaxService/setDebugMode': 'powerlink-api/methods/pmaxservice-setdebugmode.md'
