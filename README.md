@@ -72,6 +72,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Credits
 - [davesmeghead](https://github.com/davesmeghead/visonic) – For the Home Assistant integration inspiration
+- [cfalas](https://github.com/cfalas) - PR Contributions
 - [My Site](http://www.rexchoppers.com)
 
 ---
