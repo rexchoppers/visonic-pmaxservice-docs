@@ -90,4 +90,3 @@ nav:
       - 'PmaxService/getMaxDevice': 'powerlink-api/methods/pmaxservice-getmaxdevice.md'
       - 'PmaxService/getLocation': 'powerlink-api/methods/pmaxservice-getlocation.md'
       - 'PmaxService/setDebugMode': 'powerlink-api/methods/pmaxservice-setdebugmode.md'
-      - 'PmaxService/setDebugMode': 'powerlink-api/methods/pmaxservice-setdebugmode.md'
