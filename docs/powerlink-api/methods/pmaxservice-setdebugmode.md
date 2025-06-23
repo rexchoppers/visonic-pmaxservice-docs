@@ -1,4 +1,4 @@
-# PmaxService/setPanelState
+# PmaxService/setDebugMode
 
 ## Name
 PmaxService/setDebugMode
