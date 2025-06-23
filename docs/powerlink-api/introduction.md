@@ -25,3 +25,4 @@ The Powerlink module which is used to interact between the panel and Powermanage
 
 - A list of supported methods and their parameters can be found under the **Methods** section
 - Parameter order does matter so make sure to check the order of the parameters in the parameters section
+- For some methods, the client needs to be registered first, see the [PmaxService/registerClient](./methods/pmaxservice-registerclient.md) method for more details
