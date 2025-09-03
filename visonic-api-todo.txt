@@ -21,3 +21,10 @@ POST https://visonic.tycomonitor.com/rest_api/10.0/register_push_recipient
 }
 ```
 
+
+
+
+
+- REST API 13
+- Installer 11.0
+- Firmware upgrades
