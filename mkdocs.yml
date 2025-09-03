@@ -1,92 +1,10 @@
-site_name: Visonic PmaxService Documentation
+site_name: Visonic Documentation
 theme:
   name: material
 
+plugins:
+  - monorepo
+  - neoteroi.mkdocsoad
+
 nav:
-- Home: 'index.md'
-- Visonic API:
-    - 'Introduction': 'visonic-api/introduction.md'
-    - 'App IDs': 'visonic-api/app-ids.md'
-    - '/version': 'visonic-api/version.md'
-    - '/apptype': 'visonic-api/apptype.md'
-    - '/rest_api':
-      - '/installer':
-        - '/8.0':
-          - '/auth': 'visonic-api/rest/installer/8.0/auth.md'
-          - '/panels': 'visonic-api/rest/installer/8.0/panels.md'
-          - '/panel_info': 'visonic-api/rest/installer/8.0/panel-info.md'
-          - '/customer_info': 'visonic-api/rest/installer/8.0/customer-info.md'
-          - '/status': 'visonic-api/rest/installer/8.0/status.md'
-          - '/configuration_list': 'visonic-api/rest/installer/8.0/configuration-list.md'
-          - '/feature_set': 'visonic-api/rest/installer/8.0/feature-set.md'
-          - '/events': 'visonic-api/rest/installer/8.0/events.md'
-          - '/devices': 'visonic-api/rest/installer/8.0/devices.md'
-          - '/users': 'visonic-api/rest/installer/8.0/users.md'
-          - '/configuration': 'visonic-api/rest/installer/8.0/configuration.md'
-          - '/start_download_eprom': 'visonic-api/rest/installer/8.0/start-download-eprom.md'
-          - '/process_status': 'visonic-api/rest/installer/8.0/process-status.md'
-          - '/groups': 'visonic-api/rest/installer/8.0/groups.md'
-          - '/start_download_device_configuration': 'visonic-api/rest/installer/8.0/start-download-device-configuration.md'
-          - '/upload_configuration': 'visonic-api/rest/installer/8.0/upload-configuration.md'
-          - '/standard_log': 'visonic-api/rest/installer/8.0/standard-log.md'
-          - '/customize_zone': 'visonic-api/rest/installer/8.0/customize-zone.md'
-          - '/rri_results': 'visonic-api/rest/installer/8.0/rri-results.md'
-          - '/initiate_rri': 'visonic-api/rest/installer/8.0/initiate-rri.md'
-          - '/walk_test_status': 'visonic-api/rest/installer/8.0/walk-test-status.md'
-          - '/start_walk_test': 'visonic-api/rest/installer/8.0/start-walk-test.md'
-          - '/stop_walk_test': 'visonic-api/rest/installer/8.0/stop-walk-test.md'
-          - '/group':
-            - '/assign': 'visonic-api/rest/installer/8.0/group/assign.md'
-          - '/had':
-            - '/rules':
-              - '/event-profiles': 'visonic-api/rest/installer/8.0/had/rules/event-profiles.md'
-          - '/panel':
-            - '/diagnostics': 'visonic-api/rest/installer/8.0/panel/diagnostics.md'
-            - '/login': 'visonic-api/rest/installer/8.0/panel/login.md'
-            - '/add': 'visonic-api/rest/installer/8.0/panel/add.md'
-      - '/10.0':
-        - '/auth': 'visonic-api/rest/10.0/auth.md'
-        - '/panels': 'visonic-api/rest/10.0/panels.md'
-        - '/panel_access_info': 'visonic-api/rest/10.0/panel-access-info.md'
-        - '/panel_info': 'visonic-api/rest/10.0/panel-info.md'
-        - '/locations': 'visonic-api/rest/10.0/locations.md'
-        - '/status': 'visonic-api/rest/10.0/status.md'
-        - '/feature_set': 'visonic-api/rest/10.0/feature-set.md'
-        - '/events': 'visonic-api/rest/10.0/events.md'
-        - '/home_automation_devices': 'visonic-api/rest/10.0/home-automation-devices.md'
-        - '/devices': 'visonic-api/rest/10.0/devices.md'
-        - '/smart_devices': 'visonic-api/rest/10.0/smart-devices.md'
-        - '/users': 'visonic-api/rest/10.0/users.md'
-        - '/allow_switch_to_programming_mode': 'visonic-api/rest/10.0/allow-switch-to-programming-mode.md'
-        - '/had':
-          - '/rules':
-            - 'event-profiles': 'visonic-api/rest/10.0/had/rules/event-profiles.md'
-            - 'restrictions': 'visonic-api/rest/10.0/had/rules/restrictions.md'
-      - '/panel':
-        - '/login': 'visonic-api/rest/panel/login.md'
-- Powerlink API:
-  - 'Introduction': 'powerlink-api/introduction.md'
-  - Methods:
-      - 'PmaxService/getApiVersion': 'powerlink-api/methods/pmaxservice-getapiversion.md'
-      - 'PmaxService/registerClient': 'powerlink-api/methods/pmaxservice-registerclient.md'
-      - 'PmaxService/getBatteryLevel': 'powerlink-api/methods/pmaxservice-getbatterylevel.md'
-      - 'PmaxService/getConnectionType': 'powerlink-api/methods/pmaxservice-getconnectiontype.md'
-      - 'PmaxService/setPanelState': 'powerlink-api/methods/pmaxservice-setpanelstate.md'
-      - 'PmaxService/getDate': 'powerlink-api/methods/pmaxservice-getdate.md'
-      - 'PmaxService/getDateTime': 'powerlink-api/methods/pmaxservice-getdatetime.md'
-      - 'PmaxService/enableSsh': 'powerlink-api/methods/pmaxservice-enablessh.md'
-      - 'PmaxService/getLocationsList': 'powerlink-api/methods/pmaxservice-getlocationslist.md'
-      - 'PmaxService/getPanelConfig': 'powerlink-api/methods/pmaxservice-getpanelconfig.md'
-      - 'PmaxService/getPanelStatuses': 'powerlink-api/methods/pmaxservice-getpanelstatuses.md'
-      - 'PmaxService/getPanelState': 'powerlink-api/methods/pmaxservice-getpanelstate.md'
-      - 'PmaxService/getDevicesConfig': 'powerlink-api/methods/pmaxservice-getdevicesconfig.md'
-      - 'PmaxService/getDeviceConfig': 'powerlink-api/methods/pmaxservice-getdeviceconfig.md'
-      - 'PmaxService/isPanelConnected': 'powerlink-api/methods/pmaxservice-ispanelconnected.md'
-      - 'PmaxService/getUserCodes': 'powerlink-api/methods/pmaxservice-getusercodes.md'
-      - 'PmaxService/getUserCode': 'powerlink-api/methods/pmaxservice-getusercode.md'
-      - 'PmaxService/getDeviceStatuses': 'powerlink-api/methods/pmaxservice-getdevicestatuses.md'
-      - 'PmaxService/getEepromVersion': 'powerlink-api/methods/pmaxservice-geteepromversion.md'
-      - 'PmaxService/getMaxDevices': 'powerlink-api/methods/pmaxservice-getmaxdevices.md'
-      - 'PmaxService/getMaxDevice': 'powerlink-api/methods/pmaxservice-getmaxdevice.md'
-      - 'PmaxService/getLocation': 'powerlink-api/methods/pmaxservice-getlocation.md'
-      - 'PmaxService/setDebugMode': 'powerlink-api/methods/pmaxservice-setdebugmode.md'
+  - Home: index.md
