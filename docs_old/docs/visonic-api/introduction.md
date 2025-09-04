@@ -34,11 +34,3 @@ There are several versions and types of this API available. Calling the `/versio
   ]
 }
 ```
-
-
-## Authentication
-There are two types of tokens that are passed in the header of the request.
-
-`User-Token`: This token is used for the user to authenticate with the server.
-
-`Session-Token`: Used alongisde the `User-Token`, this token is used for operations on a specific panel.
