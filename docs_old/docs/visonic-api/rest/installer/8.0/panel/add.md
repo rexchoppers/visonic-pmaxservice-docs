@@ -4,7 +4,7 @@
 /panel/add
 
 ## Description
-This method is used to login and generate an installer session with a panel.
+This method is used to add a new panel to the installer account.
 
 ## Parameters
 - `alias` Panel name
