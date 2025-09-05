@@ -2,9 +2,9 @@ site_name: Visonic Documentation
 theme:
   name: material
 
-plugins:
-  - monorepo
-  - neoteroi.mkdocsoad
-
 nav:
   - Home: index.md
+  - PowerManage API Docs: https://rexchoppers.github.io/docs-powermanage-api
+  # - External:
+    #  - Visonic GitHub Repo: https://github.com/davesmeghead/visonic
+     # - Connor's Site: http://www.rexchoppers.com
