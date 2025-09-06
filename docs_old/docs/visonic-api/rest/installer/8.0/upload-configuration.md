@@ -12,6 +12,7 @@ This method uploads a configuration update to the panel. Please be careful when 
 
 ## Authentication
 `User-Token` is required.
+`Session-Token` is required.
 
 ## Example Request
 `POST /upload_configuration`
