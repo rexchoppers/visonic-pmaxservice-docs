@@ -5,6 +5,7 @@ theme:
 nav:
   - Home: index.md
   - PowerManage API Docs: https://rexchoppers.github.io/docs-powermanage-api
+  - PowerLink API Docs: https://playground.open-rpc.org/?schemaUrl=https://raw.githubusercontent.com/rexchoppers/docs-powerlink-api/refs/heads/dist/openrpc.build.json
   # - External:
     #  - Visonic GitHub Repo: https://github.com/davesmeghead/visonic
      # - Connor's Site: http://www.rexchoppers.com
