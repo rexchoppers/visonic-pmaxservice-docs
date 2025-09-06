@@ -6,7 +6,6 @@ The following site contains technical information for interfacing with the Vison
 **Note:** This site is heavily work in progress and may contain outdated/incorrect information.
 Please make sure to check your requests before performing them on your device
 
-
 ## Supported Devices
 - Visonic PowerMaster GTX
 - Visonic PowerLink3 Module.
