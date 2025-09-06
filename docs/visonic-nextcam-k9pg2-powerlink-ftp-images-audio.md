@@ -16,7 +16,7 @@ When paired with the **PowerLink3.1 module**, you can capture, store, and access
 ## Details
 - The panel splits the captured media into:
   - **Images**: Captured when motion is detected.
-  - **Audio Clips**: Short recordings accompanying the images.
+  - **Audio Clip**: Short recording accompanying the images.
 - This captures only 5 seconds of audio per event.
 - The files are stored with the name: `<SensorID>_<INDEX>.<extension>`
   - Example: `cam11_10.jpg.jpg` and `cam11_0.wav`
