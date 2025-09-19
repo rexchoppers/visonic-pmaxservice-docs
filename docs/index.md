@@ -13,7 +13,7 @@ Please make sure to check your requests before performing them on your device
 
 ## Resources
 - [My Site](http://www.rexchoppers.com)
-- [LinkedIn](https://www.linkedin.com/in/connor-b-50984311b/)
+- [LinkedIn](https://www.linkedin.com/in/connor-brady-50984311b)
 
 ## Credits
 [davesmeghead](https://github.com/davesmeghead/visonic) - For creating the best Home Assistant integration for Visonic panels
