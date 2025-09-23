@@ -8,31 +8,24 @@ The documentation is intended for developers, integrators, and advanced users wh
 > **Note:** This site is a work in progress and may contain outdated or incomplete information. Please verify requests before using them on production devices.
 
 ## Features
-- **Powerlink API Documentation:**
-  - JSON-RPC interface for Powerlink modules
-  - Method reference with example requests and responses
-- **Visonic REST API Documentation:**
-  - REST endpoints for user and installer applications
-  - Authentication, device management, and panel operations
-  - Example requests and responses
-- **Error Codes:**
-  - Common error responses and their meanings
-- **Versioning:**
-  - Supported API versions and endpoints
+- **Central hub for Visonic docs:** Links to detailed PowerManage and PowerLink API docs
+- **Local articles:** Focused guides hosted in this repo (see `docs/`)
+- **Artifacts:** JSON files for errors and items to investigate (`errors.json`, `to-add.json`)
 
 ## Project Structure
 ```
 visonic-pmaxservice-docs/
 ├── docs/
-│   ├── index.md                # Project introduction and overview
-│   ├── powerlink-api/          # Powerlink API docs (introduction, methods)
-│   └── visonic-api/            # Visonic REST API docs (introduction, endpoints, versions)
+│   ├── index.md                                        # Site home
+│   └── visonic-nextcam-k9pg2-powerlink-ftp-images-audio.md  # Guide for Next CAM K9 PG2
 ├── mkdocs.yml                  # MkDocs configuration
 ├── requirements.txt            # Python dependencies
 ├── errors.json                 # Example error responses
 ├── to-add.json                 # Planned/undocumented API methods
 ├── visonic-api-todo.txt        # TODOs and endpoints to investigate
 ```
+
+Note: `docs_old/` contains legacy content kept for reference and is not part of the current site build.
 
 ## Getting Started
 ### Prerequisites
@@ -58,6 +51,13 @@ visonic-pmaxservice-docs/
 - Browse the documentation for detailed API references, including authentication, endpoints, parameters, and example requests/responses.
 - The documentation covers both the Powerlink JSON-RPC API and the Visonic REST API (user and installer endpoints).
 - Refer to the navigation sidebar for available sections and methods.
+
+## Useful links
+- PowerManage API Docs: https://rexchoppers.github.io/docs-powermanage-api
+- PowerLink API (OpenRPC Playground): https://playground.open-rpc.org/?schemaUrl=https://raw.githubusercontent.com/rexchoppers/docs-powerlink-api/dist/openrpc.build.json
+- Article – Accessing Images/Audio from Visonic Next CAM K9 PG2: docs/visonic-nextcam-k9pg2-powerlink-ftp-images-audio.md
+- Community – Home Assistant Visonic integration: https://github.com/davesmeghead/visonic
+- Maintainer site: http://www.rexchoppers.com
 
 ## Contributing
 Contributions are welcome! To add or update documentation:
